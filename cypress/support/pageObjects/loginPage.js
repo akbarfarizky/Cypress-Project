@@ -2,7 +2,7 @@ import loginData from "../../fixtures/loginData.json";
 
 class loginPage {
     visit(){
-        cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+        cy.visit('/web/index.php/auth/login')
     }
     inputUser(username){
         cy.xpath('//input[@placeholder="Username"]').should('be.visible')
